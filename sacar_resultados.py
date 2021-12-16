@@ -17,7 +17,7 @@ def sacar_resultados():
         data.append([ele for ele in cols if ele])
 
     try: # Abro o creo el archivo clasificacion
-        f = open("/bot/ProyectoDAM/datos/clasificacion.json","w+")
+        f = open("/bot/WebScraping/datos/clasificacion.json","w+")
     except FileNotFoundError:
         print("Archivo no existe")
         exit()
@@ -56,7 +56,7 @@ def sacar_resultados():
         resultados_partidos_final.append(suma_resultado)
 
     try: # Abro o creo el archivo resultados
-        f = open("/bot/ProyectoDAM/datos/resultados.json","w+")
+        f = open("/bot/WebScraping/datos/resultados.json","w+")
     except FileNotFoundError:
         print("Archivo no existe")
         exit()
